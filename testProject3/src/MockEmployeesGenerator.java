@@ -1,10 +1,5 @@
 import java.util.Random;
 
-
-//Хорсман, ООП, примитивы
-
-//В генератор добавить должность
-
 public class MockEmployeesGenerator {
     // method should generate mock employees.
     // data should be more-or-less relevant. Normal names, Acceptable salary, age.
