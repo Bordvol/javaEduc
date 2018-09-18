@@ -4,12 +4,9 @@ import com.study.datastructures.queue.*;
 //import com.study.datastructures.stack.ArrayStack;
 //import com.study.datastructures.stack.Stack;
 
-public class StartTest {
+public class StartTestLinkedQueue {
 
     public static void main(String[] args) {
-     //   LinkedStack stack = new LinkedStack();
-
-      //  System.out.println(stack.size());
         LinkedQueue queue = new LinkedQueue();
         queue.enqueue("A");
         queue.enqueue("B");
@@ -43,6 +40,5 @@ public class StartTest {
         System.out.println(queue.peek());
         System.out.println(queue.getHead());
         System.out.println();
-
     }
 }
