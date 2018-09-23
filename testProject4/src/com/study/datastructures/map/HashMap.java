@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class HashMap implements Map {
 
-    private static final int INITIAL_CAPACITY = 2;
+    private static final int INITIAL_CAPACITY = 5;
     int size = 0;
 
     private ArrayList[] buckets = new ArrayList[INITIAL_CAPACITY];
