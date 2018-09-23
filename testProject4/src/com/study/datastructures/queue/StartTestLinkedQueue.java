@@ -1,3 +1,5 @@
+package com.study.datastructures.queue;
+
 import com.study.datastructures.queue.*;
 //import java.util.NoSuchElementException;
 //import com.study.datastructures.queue.LinkedStack;

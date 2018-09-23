@@ -58,6 +58,7 @@ public class ArrayList implements List {
     }
 
     @Override
+    //to do - return prev
     public Object set(Object value, int index) {
         validateIndex(index);
         array[index] = value;
@@ -87,6 +88,9 @@ public class ArrayList implements List {
                 return true;
             }
         }
+      //  if (indexOf(value)!=-1){
+       //     return true;
+      //  }
         return false;
     }
 
