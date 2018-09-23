@@ -4,86 +4,91 @@ public class MockEmployeesGenerator {
     // method should generate mock employees.
     // data should be more-or-less relevant. Normal names, Acceptable salary, age.
 
+    static String[] listOfMaleFirstNames =  {
+            "Bart"
+            ,"Tommy"
+            ,"Hipolito"
+            ,"Rocky"
+            ,"Lucien"
+            ,"Randy"
+            ,"Robin"
+            ,"Forrest"
+            ,"Otha"
+            ,"Erik"
+            ,"George"
+            ,"Mack"
+            ,"Preston"
+            ,"Zackary"
+            ,"Otis"
+            ,"Ned"
+            ,"Colby"
+            ,"Jarod"
+            ,"Al"
+            ,"Harley"
+    };
+
+    static String[] listOfFemaleFirstNames =  {
+            "Emma"
+            , "Olivia"
+            , "Ava"
+            , "Isabella"
+            , "Sophia"
+            , "Mia"
+            , "Charlotte"
+            , "Amelia"
+            , "Evelyn"
+            , "Abigail"
+            , "Harper"
+            , "Emily"
+            , "Elizabeth"
+            , "Avery"
+            , "Sofia"
+            , "Ella"
+            , "Madison"
+            , "Scarlett"
+            , "Victoria"
+            , "Aria"
+    };
+
+    static String[] listOfLastNames = {
+            "Smith"
+            , "Johnson"
+            , "Williams"
+            , "Jones"
+            , "Brown"
+            , "Davis"
+            , "Miller"
+            , "Wilson"
+            , "Moore"
+            , "Taylor"
+            , "Anderson"
+            , "Thomas"
+            , "Jackson"
+            , "White"
+            , "Harris"
+            , "Martin"
+            , "Thompson"
+            , "Garcia"
+            , "Martinez"
+            , "Robinson"
+    };
+
+    static char[] listOfGenders = {
+              'F'
+            , 'M'
+    };
+
+
     static Employee[] generate(int size) {
         Employee[] randomEmployees = new Employee[size];
         Employee[] randomEmployeesWithPosition = new Employee[size];
 
-        String[] listOfMaleFirstNames =  {
-                 "Bart"
-                ,"Tommy"
-                ,"Hipolito"
-                ,"Rocky"
-                ,"Lucien"
-                ,"Randy"
-                ,"Robin"
-                ,"Forrest"
-                ,"Otha"
-                ,"Erik"
-                ,"George"
-                ,"Mack"
-                ,"Preston"
-                ,"Zackary"
-                ,"Otis"
-                ,"Ned"
-                ,"Colby"
-                ,"Jarod"
-                ,"Al"
-                ,"Harley"
-        };
-
-        String[] listOfFemaleFirstNames =  {
-                  "Emma"
-                , "Olivia"
-                , "Ava"
-                , "Isabella"
-                , "Sophia"
-                , "Mia"
-                , "Charlotte"
-                , "Amelia"
-                , "Evelyn"
-                , "Abigail"
-                , "Harper"
-                , "Emily"
-                , "Elizabeth"
-                , "Avery"
-                , "Sofia"
-                , "Ella"
-                , "Madison"
-                , "Scarlett"
-                , "Victoria"
-                , "Aria"
-        };
-
-        String[] listOfLastNames = {
-                  "Smith"
-                , "Johnson"
-                , "Williams"
-                , "Jones"
-                , "Brown"
-                , "Davis"
-                , "Miller"
-                , "Wilson"
-                , "Moore"
-                , "Taylor"
-                , "Anderson"
-                , "Thomas"
-                , "Jackson"
-                , "White"
-                , "Harris"
-                , "Martin"
-                , "Thompson"
-                , "Garcia"
-                , "Martinez"
-                , "Robinson"
-        };
-
-        char[] listOfGenders = {
-                  'F'
-                , 'M'
-        };
 
         Random random = new Random();
 
+        //переделать на 1 генератор
+        //инициализировать все поля
+        //в обьект присваивать поля (поле в поле)
         // Create people
         for (int i = 0; i < randomEmployees.length; i++) {
 

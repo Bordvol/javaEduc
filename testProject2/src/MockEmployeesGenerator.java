@@ -1,5 +1,10 @@
 import java.util.Random;
 
+
+//Хорсман, ООП, примитивы
+
+//В генератор добавить должность
+
 public class MockEmployeesGenerator {
     // method should generate mock employees.
     // data should be more-or-less relevant. Normal names, Acceptable salary, age.
@@ -55,7 +60,7 @@ public class MockEmployeesGenerator {
 
         for (int i = 0; i < randomEmployees.length; i++) {
             Random random = new Random();
-            Employee newEmployee = new Employee(i+1, listOfFirstNames[random.nextInt(19)], listOfLastNames[random.nextInt(19)], random.nextInt(40)+18, random.nextInt(2000)+1000);
+            Employee newEmployee = new Employee(i+1, listOfFirstNames[random.nextInt(19)], listOfLastNames[random.nextInt(19)], random.nextInt(40)+18, random.nextInt(2000)+1000, 'Y');
             randomEmployees[i]  = newEmployee;
         }
         return randomEmployees;

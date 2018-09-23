@@ -2,6 +2,20 @@ public class Test {
     public static void main(String[] args) {
         Employee [] mockEmployees = MockEmployeesGenerator.generate(10);
         print(mockEmployees);
+
+        EmployeeService EmpServ = new EmployeeService();
+        EmpServ.employees = mockEmployees;
+
+        Employee employee = EmpServ.getById(1);
+
+        System.out.println("==========================");
+        print(employee);
+
+        Employee [] newListOfEmployee = EmpServ.findByFirstName("Tommy");
+        System.out.println("Count of found = " + newListOfEmployee.length);
+
+        newListOfEmployee = EmpServ.sortByFirstName();
+        print(newListOfEmployee);
     }
 
     // Method Should print all employees
@@ -18,4 +32,6 @@ public class Test {
         System.out.print(", age is " + employee.age);
         System.out.println(", salary is " + employee.salary);
     }
+
+
 }
